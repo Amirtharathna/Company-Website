@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Company Website CSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5c74838b0e.js"></script>
+
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Catamaran', sans-serif;
+            background-color: #fff;
+
+
+        }
+
+        .main {
+            padding: 0;
+            margin: 0;
+            height: 50px;
+            width: 100%;
+            background-image: linear-gradient(#80ff00, #898989);
+            position: fixed;
+
+        }
+
+        .main h1 {
+            margin: 0;
+            color: chocolate;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+
+        }
+
+
+
+        /*  .menu {
+            width: 20%;
+            margin: 0;
+            line-height: 3.5;
+            overflow: auto;
+            position: fixed;            height:100%;
+
+        }*/
+        .menu {
+            line-height: 2.5;
+        }
+
+        .menu ul {
+            width: 20%;
+            height: 100%;
+            margin-top: 0;
+            padding: 0;
+            list-style-type: none;
+            overflow: auto;
+            position: fixed;
+        }
+
+        .menu ul li {
+            width: 100%;
+            font-weight: 700;
+            background-color: black;
+            text-align: center;
+
+        }
+
+        .menu ul li a {
+
+            text-transform: capitalize;
+            display: block;
+            width: 100% !important;
+            text-decoration-line: none;
+
+        }
+
+        a {
+            color: hotpink;
+        }
+
+        li a:hover {
+            background-color: indigo;
+            color: rgb(176, 224, 64);
+            width: 100%;
+        }
+
+        li a:active {
+            color: black;
+            background-color: lightsalmon;
+
+        }
+
+
+        .img {
+            margin: 0;
+            width: 100%;
+            float: left;
+            height: 200px;
+            border-radius: 30%;
+            border-color: red;
+        }
+
+        .img img {
+            margin: 0;
+            width: 33%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 3;
+            border-color: red;
+
+        }
+
+        /* .form {
+            float:right;
+            padding: 0;
+            width: 20%;
+            height: 350px;
+            position: fixed;
+            top: 7.5%;
+            right: 0;
+            margin: 0;
+            background-image: url('img2-code.jpg');
+            background-color: pink;
+            object-fit: contain;
+            overflow: hidden;
+        }
+        .form label{
+            color:bisque;
+            margin-top:25%;
+            float:left;
+        }
+        .form input[type=text]{
+            width:70%;
+            float:right;
+            margin-top:25%;
+            box-sizing: unset;
+            border-radius: 2%;
+        }*/
+        .content1 {
+            margin-top: 3.5%;
+            background-color: rgb(186, 193, 199);
+            width: 80%;
+            height: 400px;
+            float: right;
+            border-radius: 2%;
+        }
+
+        .content1 h1 {
+            padding: 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: darkmagenta;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 25px;
+            text-decoration-line: underline;
+            text-decoration-color: darkorange;
+            text-decoration-style: double;
+
+
+        }
+
+        .content1 p {
+            padding: 0;
+            text-transform: none;
+            text-align: justify;
+            line-height: 1.5;
+            font-family: 'Catamaran', sans-serif;
+            margin: 10px 30px;
+            color: darkgreen;
+
+        }
+
+/*.form{clear:both;
+    width:20%;
+    height:500px;
+    float:left;
+    margin:0;
+    background-image: linear-gradient(gray,pink,gray);
+    position:fixed;
+
+}*/
+        .content2 {
+            margin-top: 3.5%;
+            background-color: rgb(186, 193, 199);
+            width: 80%;
+            height: 1000px;
+            float: right;
+            border-radius: 2%;
+            text-align: center;
+
+        }
+
+        .content2 h1 {
+            padding: 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: darkmagenta;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 25px;
+            text-decoration-line: underline;
+            text-decoration-color: darkorange;
+            text-decoration-style: double;
+            margin-left: 10%;
+            margin-right: 10%;
+            box-sizing: border-box;
+
+        }
+
+        .row {
+            width: 100%;
+            margin-left: 2%;
+        }
+
+        .back2 {
+            width: 31%;
+            margin: 2%;
+            text-align: center;
+            box-sizing: border-box;
+            float: left;
+            height: 700px;
+            width: 300px;
+            box-shadow: 0 0 5px;
+            transition: all 400ms ease-in-out;
+            /* background-image: url('back-img.jpg');*/
+            background-image: linear-gradient(red, rgb(255, 9, 132), darkorange)
+        }
+
+        .back2 i {
+            color: white;
+            font-size: 50px;
+            margin-top: 70px;
+            transition: all 400ms ease-in-out;
+        }
+
+        .back2 h3 {
+            margin: 0 20px;
+
+            font-size: 2rem;
+            color: rgb(31, 30, 30);
+        }
+
+        .back2 p {
+            margin: 0 20px;
+            font-size: 1.2rem;
+            color: black;
+            text-align: center;
+            text-transform: none;
+            font-weight: 400;
+            font-size: 0.75rem;
+        }
+
+        .back2 button {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            margin-right: 0;
+            margin-left: 0;
+            font-size: 20px;
+
+            padding: 10px 20px;
+            outline: 0;
+            border: 0;
+            border-radius: 5px;
+            background-color: #fff;
+            color: crimson;
+        }
+
+        .back2:hover {
+            background-image: linear-gradient(green, yellow, greenyellow);
+            color: #fff;
+        }
+
+        .back2:hover h3 {
+            color: red;
+        }
+
+        .back2:hover i {
+            color: darkorange;
+            transform: scale(1.5, 1.5) translateY(-30%);
+        }
+
+        .back2:hover p {
+            color: darkorchid;
+        }
+
+        .back2:hover button {
+            background-color: crimson;
+            color: #fff;
+        }
+
+        .content3 {
+            margin-top: 3.5%;
+            background-color: rgb(186, 193, 199);
+            width: 80%;
+            height: 1500px;
+            float: right;
+            border-radius: 2%;
+            text-align: center;
+
+        }
+
+        .content3 h1 {
+            padding: 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: darkmagenta;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 25px;
+            text-decoration-line: underline;
+            text-decoration-color: darkorange;
+            text-decoration-style: double;
+            margin-left: 10%;
+            margin-right: 10%;
+            box-sizing: border-box;
+
+        }
+
+        .content3-main {
+            margin: 0;
+            height: 300px;
+            width: 100%;
+            margin-left: 0.5%;
+        }
+
+        .content3-div1 {
+            margin: 0%;
+            border-radius: 5%;
+            border-color: hotpink;
+            border-style: dashed;
+            float: left;
+            height: 350px;
+            width: 50%;
+            background-color: white;
+            background-image: url('img1-lan.jpg');
+            background-origin: border-box;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: 2px;
+            background-size: 100% 100%;
+        }
+
+        .content3-div2 {
+            margin: 0;
+            padding: 0;
+            float: right;
+            margin-right: 0.5%;
+            height: 350px;
+            width: 50%;
+            border-radius: 5%;
+        }
+
+        .content3-div2 p {
+            margin-top: 10px;
+            border-radius: 5%;
+
+            padding: 20px;
+            height: 100%;
+            line-height: 1.5;
+            font-variant: normal;
+            font-style: normal;
+            text-align: center;
+            color: black;
+            background-repeat: no-repeat;
+            margin-top: -65%;
+            background-image: linear-gradient(gray, pink, gray);
+            padding: 0;
+            font-size: 20px;
+
+
+
+        }
+
+        .content3-div1:hover {
+            transform: scale(0.8, 0.8);
+            transition: all 500ms ease-out;
+
+
+        }
+
+        .content3-div3 {
+            margin-top: -25%;
+            border-radius: 5%;
+            border-color: hotpink;
+            border-style: dashed;
+            float: left;
+            height: 350px;
+            width: 50%;
+            background-color: white;
+            background-image: url('img2-code.jpg');
+            background-origin: border-box;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: 2px;
+            background-size: 100% 100%;
+        }
+
+        .content3-div4 {
+            margin: 0;
+            padding: 0;
+            float: right;
+            margin-right: 0.5%;
+            height: 350px;
+            width: 50%;
+            border-radius: 5%;
+        }
+
+        .content3-div4 p {
+            margin-top: 10px;
+            border-radius: 5%;
+
+            padding: 20px;
+            height: 100%;
+            line-height: 1.5;
+            font-variant: normal;
+            font-style: normal;
+            text-align: center;
+            color: black;
+            background-repeat: no-repeat;
+            margin-top: -65%;
+            background-image: linear-gradient(gray, pink, gray);
+            padding: 0;
+            font-size: 20px;
+
+
+
+        }
+
+        .content3-div3:hover {
+            transform: scale(0.8, 0.8);
+            transition: all 500ms ease-out;
+
+
+        }
+
+        .content3-div5 {
+            margin-top: -25%;
+            border-radius: 5%;
+            border-color: hotpink;
+            border-style: dashed;
+            float: left;
+            height: 350px;
+            width: 50%;
+            background-color: white;
+            background-image: url('img3-design.png');
+            background-origin: border-box;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: 2px;
+            background-size: 100% 100%;
+        }
+
+        .content3-div6 {
+            margin: 0;
+            padding: 0;
+            float: right;
+            margin-right: 0.5%;
+            height: 350px;
+            width: 50%;
+            border-radius: 5%;
+        }
+
+        .content3-div6 p {
+            margin-top: 10px;
+            border-radius: 5%;
+
+            padding: 20px;
+            height: 100%;
+            line-height: 1.5;
+            font-variant: normal;
+            font-style: normal;
+            text-align: center;
+            color: black;
+            background-repeat: no-repeat;
+            margin-top: -65%;
+            background-image: linear-gradient(gray, pink, gray);
+            padding: 0;
+            font-size: 20px;
+
+
+
+        }
+
+        .content3-div5:hover {
+            transform: scale(0.8, 0.8);
+            transition: all 500ms ease-out;
+
+
+        }
+
+        .content4 {
+            margin-top: 3.5%;
+            background-color: pink;
+            width: 80%;
+            height: 550px;
+            float: right;
+            border-radius: 2%;
+            text-align: center;
+
+        }
+
+        .content4:hover {
+            background-color: rgb(255, 105, 138);
+
+        }
+
+
+        .content4 h1 {
+            padding: 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: darkmagenta;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 25px;
+            text-decoration-line: underline;
+            text-decoration-color: darkorange;
+            text-decoration-style: double;
+            margin-left: 10%;
+            margin-right: 10%;
+            box-sizing: border-box;
+
+        }
+
+        .content4 p {
+
+            padding: 0;
+            text-transform: none;
+            text-align: justify;
+            line-height: 1.5;
+            font-family: 'Catamaran', sans-serif;
+            margin: 10px 30px;
+            color: darkgreen;
+        }
+
+        .row1,
+        .row2 {
+            width: 100%;
+            margin-left: 2%;
+        }
+
+
+        .col1,
+        .col2 {
+            border-radius: 50%;
+            width: 20%;
+            margin: 2%;
+            text-align: center;
+            box-sizing: border-box;
+            float: left;
+            height: 150px;
+            width: 150px;
+            box-shadow: 0 0 5px;
+            transition: all 400ms ease-in-out;
+            /* background-image: url('back-img.jpg');*/
+            background-image: linear-gradient(blue, violet, aqua);
+        }
+
+        .col1 i,
+        .col2 i {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            margin-top: 70px;
+            transition: all 400ms ease-in-out;
+        }
+
+        .col1 h3,
+        .col2 h3 {
+            margin: 0 20px;
+
+            font-size: 1rem;
+            color: rgb(31, 30, 30);
+        }
+
+        .col2:hover {
+            background-image: linear-gradient(yellow, gray, pink);
+            color: #fff;
+        }
+
+        .col2:hover i {
+            color: darkorange;
+            transform: scale(1.5, 1.5) translateY(-30%);
+        }
+
+        .col1:hover {
+            background-image: linear-gradient(yellow, gray, pink);
+            color: #fff;
+        }
+
+        .col1:hover i {
+            color: darkorange;
+            transform: scale(1.5, 1.5) translateY(-30%);
+        }
+
+        .col1:hover h3 {
+            color: red;
+        }
+
+        .col2:hover h3 {
+            color: red;
+        }
+/*.bot{
+        margin-top: 3.5%;
+            background-color:gray;
+            width: 80%;
+            height: 100px;
+            float: right;
+            border-radius: 2%;
+            text-align: center;
+
+        }*/
+        iframe{
+            width:100%;
+            height:300px;
+            float:right;
+            margin-right:0;
+            margin-left:0;
+            margin-top:175px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>
+            <i>company website</i> </h1>
+
+
+        <!--  <div class="img">
+        <img src="img1-lan.jpg" alt="img1-lan">
+        <img src="img2-code.jpg" alt="img2-code">
+        <img src="img3-design.png" alt="img3-design">
+    </div>-->
+        <div class="menu">
+            <ul>
+                <li> <a href="#" target="_self">Home</a></li>
+                <li><a href="#" target="_self">about us</a></li>
+                <li><a href="#" target="_self">services</a></li>
+                <li><a href="#" target="_self">Technologies</a></li>
+                <li><a href="#" target="_self">contact us</a></li>
+
+            </ul>
+        </div>
+        <!-- <div class="form">
+            <label for="Login"></label>
+<input type="text" name="Login" placeholder="type your user id here">
+
+        </div>-->
+    </div>
+    <div class="content1">
+        <h1>home</h1>
+        <p>A company's information technology department plans, operates and supports an organization’s IT
+            infrastructure, enabling business users to carry out their roles efficiently, productively and securely. The
+            department must meet multiple business and technical requirements, provide a secure IT infrastructure and
+            minimize costs, according to a Gartner survey.A senior member of the IT team works with business executives
+            to develop an IT strategy that supports the organization’s business objectives and helps build a strong
+            competitive advantage. They customize software and other elements of the IT system to meet the needs of
+            business departments. The team also ensures that the right level of IT resources is available to meet
+            changing levels of demand. To increase flexibility and responsiveness, the IT team investigates options,
+            such as outsourcing management of the infrastructure or renting additional IT capacity from an external
+            provider.The IT team develops and operates a network to support effective communication and collaboration.
+            Increasingly, they are deploying the latest Internet Protocol networks with the capability to carry all
+            voice, data, video and Internet traffic on a single network. IP networks enable organizations to replace
+            their legacy telephone systems with an IP-based system, reducing complexity and providing a platform for
+            deploying advanced unified communications tools. The IT team develops solutions that allow external
+            organizations, such as customers and supply chain members, to securely access the corporate network.</p>
+    </div>
+   <!-- <div class="form">
+        <h2>FOR QUERIES</h2>
+        <input type="text" placeholder="enter your name">
+        <label for="query">Query</label>
+        <textarea  id="query" cols="30" rows="10">send query</textarea>
+        <button>Send</button> <button>Cancel</button>
+    </div>-->
+    <div class="content2">
+        <h1>about us</h1>
+        <div class="row">
+            <div class="back2">
+                <i class="fab fa-js-square"></i>
+                <h3>Software Training</h3>
+                <p>88% of developers use more than one programming language
+                    The growing adoption of mobile and cloud operating systems, along with corporate initiatives aligned
+                    to BYOD, software-defined networking and big data analytics, are forcing developers to acquire new
+                    and enhance existing programming language skills.
+
+                    In order for programmers and developers to meet the market needs and growing demand, Global
+                    Knowledge offers a comprehensive portfolio of the most popular programming languages. If you’re just
+                    getting started or looking to master a specific language for a current project, we have a
+                    programming training course to help you achieve your professional goals and meet business needs.</p>
+                <button>Get Started</button>
+            </div>
+
+
+
+            <div class="back2">
+
+                <i class="fab fa-codepen"></i>
+                <h3>Code</h3>
+                <p>At its heart, coding is expression and problem solving. You can focus on its applications, on
+                    programming languages, but no matter how you practice it, you’ll cultivate these two essential
+                    skills, which will help you in all aspects of life. Besides existential value, learning to code
+                    proficiently will offer you myriad job opportunities, the ability to create your own schedule/work
+                    from anywhere, high wages for less hours of labor, eager to please clients that need/search for your
+                    help, and much more. Coders have more time to work on their passions, side projects, and enjoy a
+                    sense of self-reliance most workers don’t. They spend their time making websites, applications, and
+                    systems work, while building real solutions, and improving experiences for end users and employers
+                    alike.</p> <button>Get Started</button>
+
+            </div>
+            <div class="back2">
+
+                <i class="fab fa-css3-alt"></i>
+                <h3>Design</h3>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of
+                    websites. The different areas of web design include web graphic design; interface design; authoring,
+                    including standardised code and proprietary software; user experience design; and search engine
+                    optimization. Often many individuals will work in teams covering different aspects of the design
+                    process, although some designers will cover them all. The term web design is normally used to
+                    describe the design process relating to the front-end (client side) design of a website including
+                    writing markup. Web design partially overlaps web engineering in the broader scope of web
+                    development. Web designers are expected to have an awareness of usability</p>
+                <button>Get Started</button>
+
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <div class="content3">
+            <h1>Services</h1>
+            <div class="content3-main">
+                <div class="content3-div1">
+
+                </div>
+                <div class="content3-div2">
+                    <p>A programming language is a formal language, which comprises a set of instructions that produce
+                        various kinds of output. Programming languages are used in computer programming to implement
+                        algorithms. Most programming languages consist of instructions for computers.Breakdown of the 9
+                        Most
+                        In-Demand Programming Languages.
+                        SQL,
+                        Java,
+                        JavaScript,
+                        C#,
+                        C++,
+                        Python,
+                        PHP.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="content3-main">
+                <div class="content3-div3">
+
+                </div>
+                <div class="content3-div4">
+                    <p>In Software Coding Process further change and clarifications are required in the design or SRS,
+                        the software development team raises a query, which is sent to the user with the document
+                        containing what the software development team understood from the documents sent by the user.
+                        Changes are made only when the user has a positive response to the queries raised by the
+                        software development team.
+                        In-Demand Programming Languages.
+                        SQL,
+                        Java,
+                        JavaScript,
+                        C#,
+                        C++,
+                        Python,
+                        PHP.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="content3-main">
+                <div class="content3-div5">
+
+                </div>
+                <div class="content3-div6">
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of
+                        websites. The different areas of web design include web graphic design; interface design;
+                        authoring, including standardised code and proprietary software; user experience design; and
+                        search engine optimization. Often many individuals will work in teams covering different aspects
+                        of the design process, although some designers will cover them all.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="content4">
+                <h1>Technologies</h1>
+                <p>Institute offers a wide range of Software Training and development of varied nature. Long –term,
+                    Short –term, Refresher or
+                    Follow- up courses and programs are being offered. We ascertain that the syllabus and curriculum
+                    of
+                    each
+                    course is well mapped with the requirements of the IT employers. The following are some the
+                    principal
+                    courses offered by us.</p>
+
+                <div class="row1">
+
+                    <div class="col1">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+
+                    </div>
+                    <div class="col1">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+
+                    </div>
+                    <div class="col1"><i class="fab fa-js"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="col1"><i class="fab fa-angular"></i>
+                        <h3>AngularJS</h3>
+                    </div>
+                    <div class="col1"><i class="fab fa-node-js"></i>
+                        <h3>NodeJS</h3>
+                    </div>
+                </div>
+                <div class="row2">
+
+                    <div class="col2">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+
+                    </div>
+                    <div class="col2">
+                        <i class="fab fa-android"></i>
+                        <h3>Android</h3>
+
+                    </div>
+                    <div class="col2"><i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="col2"><i class="fab fa-windows"></i>
+                        <h3>MS Azure</h3>
+                    </div>
+                    <div class="col2"><i class="fab fa-salesforce"></i>
+                        <h3>Salesforce</h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.673181067428!2d80.227825714304!3d12.928714619317219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c58e5fa33e5%3A0xf7b332a51fce3470!2sCognizant+TCO!5e0!3m2!1sen!2sin!4v1561409890247!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</body>
+
+</html>
